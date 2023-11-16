@@ -21,10 +21,10 @@ main {
 
 header {
     border: 1px solid black;
-    padding: 20px;
+    padding: 1px;
     grid-area: h;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 1px;
+    margin-bottom: 3px;
 }
 
 nav {
@@ -84,6 +84,10 @@ article {
     padding: 2px;
     border: 1px solid black;
     padding: 2px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 
 #s2 {
@@ -91,11 +95,6 @@ article {
     padding: 2px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "kep kep2 kep3 kep4"
-    "kep5 kep6 kep7 kep8"
-    "kep9 kep10 kep11 kep12"
-    "kep13 kep14 kep15 kep16";
     gap: 5px;
 }
 
@@ -119,22 +118,5 @@ article {
     }
     #s2 {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "k1"
-        "k2"
-        "k3"
-        "k4"
-        "k5"
-        "k6"
-        "k7"
-        "k8"
-        "k9"
-        "k10"
-        "k11"
-        "k12"
-        "k13"
-        "k14"
-        "k15"
-        "k16";
     }
   }
