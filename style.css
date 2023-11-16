@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "h"
+    "n"
+    "a"
+    "f";
+    border: 1px solid black;
+}
+
+header {
+    border: 1px solid black;
+    padding: 20px;
+    grid-area: h;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+nav {
+    grid-area: n;
+    background-color: gray;
+    padding: 1px;
+}
+
+nav ul {
+    border: 1px solid black;
+    padding: 1px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav a:link {
+    background-color: gray;
+    color: rgb(148, 0, 0);
+}
+
+nav a:visited {
+    background-color: gray;
+    color: rgb(148, 0, 0);
+}
+
+nav a:hover {
+    background-color: rgb(148, 0, 0);
+    color: white;
+}
+
+nav a:active {
+    background-color: rgb(148, 0, 0);
+    color: white;
+}
+
+article {
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "s1"
+    "al"
+    "s2";
+}
+
+#fokep img {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+#s2 {
+    border: 1px solid;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "kep kep2 kep3 kep4"
+    "kep5 kep6 kep7 kep8"
+    "kep9 kep10 kep11 kep12"
+    "kep13 kep14 kep15 kep16";
+    gap: 5px;
+}
+
+#al {
+    margin: 5px;
+}
+
+#s2 img {
+    padding: 2px;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    #s2 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "k1"
+        "k2"
+        "k3"
+        "k4"
+        "k5"
+        "k6"
+        "k7"
+        "k8"
+        "k9"
+        "k10"
+        "k11"
+        "k12"
+        "k13"
+        "k14"
+        "k15"
+        "k16";
+    }
+  }
